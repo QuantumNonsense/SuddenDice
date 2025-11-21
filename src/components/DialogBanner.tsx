@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     zIndex: 1000,
   },
   userContainer: {
-    backgroundColor: 'rgba(179, 179, 179, 0.35)',
+    backgroundColor: 'rgba(107, 255, 137, 0.35)',
   },
   rivalContainer: {
     backgroundColor: 'rgba(255, 107, 107, 0.35)',

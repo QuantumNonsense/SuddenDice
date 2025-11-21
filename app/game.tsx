@@ -793,10 +793,10 @@ export default function Game() {
   );
 }
 
-const BAR_BG = '#000000';
+const BAR_BG = '#115E38';
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: '#000000' },
+  root: { flex: 1, backgroundColor: '#0B3A26' },
   safe: { flex: 1 },
   content: {
     flex: 1,
@@ -805,7 +805,7 @@ const styles = StyleSheet.create({
   },
   headerCard: {
     position: 'relative',
-    backgroundColor: '#000000',
+    backgroundColor: '#115E38',
     borderRadius: 14,
     padding: 14,
     marginTop: 8,
@@ -885,7 +885,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   subtleSmall: {
-    color: '#B3B3B3',
+    color: '#C9F0D6',
     opacity: 0.8,
     textAlign: 'center',
     fontSize: 13,
@@ -934,7 +934,7 @@ const styles = StyleSheet.create({
   },
   menuBtn: {
     borderWidth: 2,
-    borderColor: '#000000',
+    borderColor: '#063a25',
   },
   btnWide: { flex: 1 },
   rollHelper: {
@@ -959,7 +959,7 @@ const styles = StyleSheet.create({
     zIndex: 2,
   },
   historyText: {
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     textAlign: 'center',
     fontSize: 13,
     marginVertical: 2,
@@ -973,7 +973,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   iconCpu: {
-    color: '#B3B3B3',
+    color: '#6BFF89',
     fontWeight: '700',
   },
   footer: {
@@ -1004,7 +1004,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modalContent: {
-    backgroundColor: '#000000',
+    backgroundColor: '#1a4d2e',
     borderRadius: 12,
     padding: 20,
     maxHeight: '70%',
@@ -1028,7 +1028,7 @@ const styles = StyleSheet.create({
     padding: 8,
   },
   closeButtonText: {
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     fontSize: 24,
     fontWeight: 'bold',
   },
@@ -1048,13 +1048,13 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   historyItemText: {
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     fontSize: 14,
     flex: 1,
     lineHeight: 20,
   },
   noHistoryText: {
-    color: '#B3B3B3',
+    color: '#C9F0D6',
     textAlign: 'center',
     fontSize: 14,
     marginVertical: 20,

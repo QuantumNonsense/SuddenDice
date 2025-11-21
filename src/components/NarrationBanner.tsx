@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.88)',
+    backgroundColor: 'rgba(9, 46, 30, 0.88)',
     borderBottomWidth: Platform.OS === 'ios' ? 0 : 1,
     borderBottomColor: 'rgba(255,255,255,0.06)',
     zIndex: 50,
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
   chip: {
     alignSelf: 'center',
     maxWidth: '94%',
-    backgroundColor: '#000000',
+    backgroundColor: '#0FA958',
     borderRadius: 14,
     paddingHorizontal: 14,
     paddingVertical: 8,

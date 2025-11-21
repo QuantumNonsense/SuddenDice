@@ -170,7 +170,7 @@ export default function RollClaimComparisonScreen() {
     return (
       <View style={styles.container}>
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#000000" />
+          <ActivityIndicator size="large" color="#0FA958" />
           <Text style={styles.loadingText}>Loading statistics...</Text>
         </View>
         <Pressable
@@ -329,7 +329,7 @@ export default function RollClaimComparisonScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#0B3A26',
   },
   scrollView: {
     flex: 1,
@@ -343,7 +343,7 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
   },
   backButtonTopText: {
-    color: '#000000',
+    color: '#0FA958',
     fontSize: 16,
     fontWeight: '600',
   },
@@ -368,10 +368,10 @@ const styles = StyleSheet.create({
   },
   highlightCard: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.15)',
+    backgroundColor: 'rgba(15, 169, 88, 0.15)',
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: 'rgba(0, 0, 0, 0.3)',
+    borderColor: 'rgba(15, 169, 88, 0.3)',
     padding: 16,
     alignItems: 'center',
   },
@@ -400,17 +400,17 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   tableContainer: {
-    backgroundColor: 'rgba(0, 0, 0, 0.15)',
+    backgroundColor: 'rgba(15, 169, 88, 0.15)',
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: 'rgba(0, 0, 0, 0.3)',
+    borderColor: 'rgba(15, 169, 88, 0.3)',
     padding: 16,
     marginTop: 8,
   },
   tableHeader: {
     flexDirection: 'row',
     borderBottomWidth: 2,
-    borderBottomColor: 'rgba(0, 0, 0, 0.4)',
+    borderBottomColor: 'rgba(15, 169, 88, 0.4)',
     paddingBottom: 12,
     marginBottom: 12,
   },
@@ -418,7 +418,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 12,
     fontWeight: '700',
-    color: '#000000',
+    color: '#0FA958',
     textAlign: 'center',
   },
   tableRow: {
@@ -446,7 +446,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   cellTextRolled: {
-    color: '#000000',
+    color: '#0FA958',
     fontWeight: '600',
   },
   cellTextClaimed: {
@@ -455,7 +455,7 @@ const styles = StyleSheet.create({
   },
   miniBar: {
     height: 4,
-    backgroundColor: '#000000',
+    backgroundColor: '#0FA958',
     borderRadius: 2,
     minWidth: 2,
   },
@@ -472,7 +472,7 @@ const styles = StyleSheet.create({
     color: '#FF6B6B',
   },
   diffNegative: {
-    color: '#B3B3B3',
+    color: '#4ECDC4',
   },
   insightCell: {
     flex: 1.2,
@@ -509,7 +509,7 @@ const styles = StyleSheet.create({
     marginBottom: 24,
   },
   retryButton: {
-    backgroundColor: '#000000',
+    backgroundColor: '#0FA958',
     paddingHorizontal: 24,
     paddingVertical: 12,
     borderRadius: 8,
@@ -545,7 +545,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   bottomMenuButton: {
-    backgroundColor: '#000000',
+    backgroundColor: '#0FA958',
     paddingVertical: 16,
     borderRadius: 12,
     alignItems: 'center',

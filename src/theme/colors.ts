@@ -1,10 +1,10 @@
 export const Colors = {
   vegasRed:   '#C21807',
-  vegasGreen: '#000000',
+  vegasGreen: '#0FA958',
 
-  feltDark:   '#000000',
-  feltMid:    '#000000',
-  feltLight:  '#000000',
+  feltDark:   '#092E1E',
+  feltMid:    '#115E38',
+  feltLight:  '#18A561',
 
   white: '#FFFFFF',
   black: '#000000',
@@ -12,5 +12,5 @@ export const Colors = {
   gray900: '#1A1A1A',
 
   danger:  '#FF3B30',
-  success: '#000000',
+  success: '#34C759',
 };

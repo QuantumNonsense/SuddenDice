@@ -150,7 +150,7 @@ export default function StatsScreen() {
     return (
       <View style={styles.container}>
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#000000" />
+          <ActivityIndicator size="large" color="#0FA958" />
           <Text style={styles.loadingText}>Loading statistics...</Text>
         </View>
         <Pressable
@@ -430,7 +430,7 @@ export default function StatsScreen() {
     return (
       <View style={styles.container}>
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#000000" />
+          <ActivityIndicator size="large" color="#0FA958" />
           <Text style={styles.loadingText}>Loading statistics...</Text>
         </View>
         <Pressable
@@ -479,7 +479,7 @@ export default function StatsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#0B3A26',
     alignItems: 'center',
     justifyContent: 'flex-start',
     paddingTop: 40,
@@ -488,7 +488,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: '700',
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     marginBottom: 16,
     textAlign: 'center',
   },
@@ -515,7 +515,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   card: {
-    backgroundColor: '#000000',
+    backgroundColor: '#115E38',
     borderRadius: 12,
     padding: 20,
     marginBottom: 16,
@@ -531,14 +531,14 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 18,
     fontWeight: '700',
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     marginBottom: 12,
     textAlign: 'center',
   },
   bigNumber: {
     fontSize: 48,
     fontWeight: '700',
-    color: '#000000',
+    color: '#0FA958',
     textAlign: 'center',
   },
   statsTable: {
@@ -550,11 +550,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 8,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(179, 179, 179, 0.1)',
+    borderBottomColor: 'rgba(230, 255, 230, 0.1)',
   },
   statLabel: {
     fontSize: 16,
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     fontWeight: '600',
     flex: 1,
   },
@@ -565,7 +565,7 @@ const styles = StyleSheet.create({
   },
   statCount: {
     fontSize: 16,
-    color: '#000000',
+    color: '#0FA958',
     fontWeight: '700',
     minWidth: 50,
     textAlign: 'right',
@@ -610,7 +610,7 @@ const styles = StyleSheet.create({
   },
   loadingText: {
     fontSize: 16,
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     marginTop: 16,
   },
   errorContainer: {
@@ -628,7 +628,7 @@ const styles = StyleSheet.create({
   },
   errorText: {
     fontSize: 16,
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     textAlign: 'center',
     marginBottom: 8,
   },
@@ -640,7 +640,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   retryButton: {
-    backgroundColor: '#000000',
+    backgroundColor: '#0FA958',
     borderRadius: 8,
     paddingVertical: 12,
     paddingHorizontal: 24,
@@ -656,7 +656,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   menuButton: {
-    backgroundColor: '#000000',
+    backgroundColor: '#115E38',
     borderRadius: 12,
     padding: 24,
     marginBottom: 16,
@@ -681,7 +681,7 @@ const styles = StyleSheet.create({
   menuButtonTitle: {
     fontSize: 20,
     fontWeight: '700',
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     marginBottom: 8,
     textAlign: 'center',
   },
@@ -700,12 +700,12 @@ const styles = StyleSheet.create({
   },
   backButtonTopText: {
     fontSize: 16,
-    color: '#000000',
+    color: '#0FA958',
     fontWeight: '600',
   },
   statCountLarge: {
     fontSize: 24,
-    color: '#000000',
+    color: '#0FA958',
     fontWeight: '700',
   },
   tendencyDescription: {

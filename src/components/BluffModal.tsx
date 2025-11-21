@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   card: {
     width: '100%',
     maxHeight: '80%',
-    backgroundColor: '#000000',
+    backgroundColor: '#113b2b',
     borderRadius: 18,
     padding: 20,
     borderWidth: 1,
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   subtle: { 
-    color: '#B3B3B3', 
+    color: '#cfeee2', 
     marginBottom: 16,
     fontSize: 14,
   },
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     paddingBottom: 8,
   },
   option: {
-    backgroundColor: '#000000',
+    backgroundColor: '#1a5a40',
     borderRadius: 12,
     paddingVertical: 14,
     paddingHorizontal: 16,
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255,255,255,0.1)',
   },
   optionPressed: {
-    backgroundColor: '#000000',
+    backgroundColor: '#236f51',
   },
   optionLabel: { 
     color: '#fff', 
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
     textAlign: 'center' 
   },
   socialOption: {
-    backgroundColor: '#000000',
+    backgroundColor: '#26775a',
   },
   cancel: {
     marginTop: 16,

@@ -137,7 +137,7 @@ export default function RulesScreen() {
         <Pressable
           onPress={() => router.push('/game')}
           style={({ pressed }) => ({
-            backgroundColor: pressed ? '#000000' : '#000000',
+            backgroundColor: pressed ? '#0a472a' : '#105c35',
             borderWidth: 3,
             borderColor: '#e0b50c',
             paddingVertical: 14,
@@ -174,7 +174,7 @@ export default function RulesScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#0B3A26',
     paddingHorizontal: 20,
     paddingTop: 32,
     paddingBottom: 20,
@@ -195,7 +195,7 @@ const styles = StyleSheet.create({
     marginBottom: 24,
   },
   statusLabel: {
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     fontSize: 14,
     marginBottom: 14,
   },
@@ -215,7 +215,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#0d6efd',
   },
   playingButton: {
-    backgroundColor: '#000000',
+    backgroundColor: '#198754',
   },
   mutedButton: {
     backgroundColor: '#6c757d',
@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 6,
   },
   volumeLabel: {
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     fontWeight: '600',
     minWidth: 90,
     textAlign: 'center',
@@ -249,7 +249,7 @@ const styles = StyleSheet.create({
   helperNote: {
     marginTop: 6,
     fontSize: 12,
-    color: '#B3B3B3',
+    color: '#C9F0D6',
   },
   rulesCard: {
     backgroundColor: 'rgba(0,0,0,0.18)',
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
   },
   body: {
     fontSize: 15,
-    color: '#B3B3B3',
+    color: '#E6FFE6',
     lineHeight: 22,
   },
 });

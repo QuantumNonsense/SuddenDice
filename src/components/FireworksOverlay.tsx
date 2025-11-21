@@ -15,7 +15,7 @@ type Particle = {
   color: string;
 };
 
-const COLORS = ['#FFD166', '#EF476F', '#000000', '#118AB2', '#FF9F1C'];
+const COLORS = ['#FFD166', '#EF476F', '#06D6A0', '#118AB2', '#FF9F1C'];
 
 export default function FireworksOverlay({
   visible,

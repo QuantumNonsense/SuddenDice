@@ -45,7 +45,7 @@ export default function UsernameScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#0B3A26',
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 32,

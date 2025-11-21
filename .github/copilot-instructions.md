@@ -156,7 +156,7 @@ npm run web           # Web-only mode (uses localStorage for persistence)
 - Types: Inline in source files, centralized image types in `types/images.d.ts`
 
 ## Styling
-- Dark green felt theme: `#000000` (defined in `app/_layout.tsx` and `constants/theme.ts`)
+- Dark green felt theme: `#0B3A26` (defined in `app/_layout.tsx` and `constants/theme.ts`)
 - Responsive: `SafeAreaView` + platform checks (`Platform.OS !== 'web'`)
 - Animations: `react-native-reanimated` for dice rolls, `Animated.Value` for UI feedback
 

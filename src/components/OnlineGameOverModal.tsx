@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   modalWin: {
-    backgroundColor: '#000000',
+    backgroundColor: '#1a4d2e',
     borderWidth: 3,
     borderColor: '#E0B50C',
   },
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
   },
   subtitleWin: {
-    color: '#B3B3B3',
+    color: '#E0F7E0',
   },
   subtitleLose: {
     color: '#FFB3B3',
@@ -212,6 +212,6 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 18,
     fontWeight: '700',
-    color: '#000000',
+    color: '#0B3A26',
   },
 });

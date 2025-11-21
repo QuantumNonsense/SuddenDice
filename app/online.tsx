@@ -312,7 +312,7 @@ export default function OnlineScreen() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		backgroundColor: '#000000',
+		backgroundColor: '#0B3A26',
 		alignItems: 'center',
 		justifyContent: 'center',
 		paddingHorizontal: 32,
@@ -384,7 +384,7 @@ const styles = StyleSheet.create({
 		marginBottom: 20,
 	},
 	button: {
-		backgroundColor: '#000000',
+		backgroundColor: '#0FA958',
 		borderRadius: 8,
 		paddingVertical: 14,
 		alignItems: 'center',
@@ -392,7 +392,7 @@ const styles = StyleSheet.create({
 		minHeight: 50,
 	},
 	buttonDisabled: {
-		backgroundColor: 'rgba(0, 0, 0, 0.5)',
+		backgroundColor: 'rgba(15, 169, 88, 0.5)',
 	},
 	buttonText: {
 		fontSize: 18,
@@ -410,8 +410,8 @@ const styles = StyleSheet.create({
 		borderColor: 'rgba(220, 38, 38, 0.4)',
 	},
 	successContainer: {
-		backgroundColor: 'rgba(0, 0, 0, 0.1)',
-		borderColor: 'rgba(0, 0, 0, 0.4)',
+		backgroundColor: 'rgba(15, 169, 88, 0.1)',
+		borderColor: 'rgba(15, 169, 88, 0.4)',
 	},
 	messageText: {
 		fontSize: 14,
