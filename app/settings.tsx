@@ -10,7 +10,7 @@ export default function SettingsScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#0B3A26', alignItems: 'center', justifyContent: 'center' },
+  container: { flex: 1, backgroundColor: '#000000', alignItems: 'center', justifyContent: 'center' },
   title: { fontSize: 28, fontWeight: '700', color: '#fff', marginBottom: 6 },
-  subtitle: { fontSize: 15, color: '#E6FFE6', marginBottom: 20 },
+  subtitle: { fontSize: 15, color: '#B3B3B3', marginBottom: 20 },
 });

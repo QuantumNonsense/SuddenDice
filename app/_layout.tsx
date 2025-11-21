@@ -45,11 +45,11 @@ export default function RootLayout() {
     initDeviceTracking();
   }, []);
 
-  // Ensure web root/background fills viewport and uses the canonical dark green
+  // Ensure web root/background fills viewport and uses the canonical black
   useEffect(() => {
     if (Platform.OS !== 'web') return;
     try {
-      const color = '#0B3A26';
+      const color = '#000000';
       const html = document.documentElement as HTMLElement;
       const body = document.body as HTMLElement;
       html.style.backgroundColor = color;
@@ -89,9 +89,9 @@ export default function RootLayout() {
       <Stack
         screenOptions={{
           headerShown: false,
-          headerStyle: { backgroundColor: '#0B3A26' },
+          headerStyle: { backgroundColor: '#000000' },
           headerTintColor: '#fff',
-          contentStyle: { backgroundColor: '#0B3A26' },
+          contentStyle: { backgroundColor: '#000000' },
         }}
       />
       {Platform.OS === 'web' && <Analytics />}

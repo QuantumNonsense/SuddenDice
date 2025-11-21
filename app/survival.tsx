@@ -145,8 +145,8 @@ export default function Survival() {
   const amplitude = 1 + clamp(0.06 + currentStreak * 0.008, 0.06, 0.20); // scale
   const periodMs = Math.round(clamp(840 - currentStreak * 18, 480, 840)); // faster with streak
 
-  // color shift: from green (#E6FFE6) to red (#FF6B6B) based on normalized streak
-  const startCol = hexToRgb('#E6FFE6');
+  // color shift: from gray (#B3B3B3) to red (#FF6B6B) based on normalized streak
+  const startCol = hexToRgb('#B3B3B3');
   const endCol = hexToRgb('#FF6B6B');
   const interp = (i: number) => Math.round(lerp(startCol[i], endCol[i], normalized));
   const dynamicScoreColor = rgbToHex(interp(0), interp(1), interp(2));
@@ -1046,10 +1046,10 @@ export default function Survival() {
   );
 }
 
-const BAR_BG = '#115E38';
+const BAR_BG = '#000000';
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: '#0B3A26' },
+  root: { flex: 1, backgroundColor: '#000000' },
   safe: { flex: 1 },
   content: {
     flex: 1,
@@ -1057,7 +1057,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   headerCard: {
-    backgroundColor: '#115E38',
+    backgroundColor: '#000000',
     borderRadius: 14,
     padding: 14,
     marginTop: 8,
@@ -1081,7 +1081,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 8,
   },
   scoreLine: {
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     fontWeight: '600',
     marginBottom: 2,
     textAlign: 'center',
@@ -1094,7 +1094,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   subtleSmall: {
-    color: '#C9F0D6',
+    color: '#B3B3B3',
     opacity: 0.8,
     textAlign: 'center',
     fontSize: 13,
@@ -1145,7 +1145,7 @@ const styles = StyleSheet.create({
   },
   menuBtn: {
     borderWidth: 2,
-    borderColor: '#063a25',
+    borderColor: '#000000',
   },
   btnWide: { flex: 1 },
   rollHelper: {
@@ -1170,7 +1170,7 @@ const styles = StyleSheet.create({
     zIndex: 2,
   },
   historyText: {
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     textAlign: 'center',
     fontSize: 13,
     marginVertical: 2,
@@ -1184,7 +1184,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   iconCpu: {
-    color: '#6BFF89',
+    color: '#B3B3B3',
     fontWeight: '700',
   },
   footer: {
@@ -1215,7 +1215,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modalContent: {
-    backgroundColor: '#1a4d2e',
+    backgroundColor: '#000000',
     borderRadius: 12,
     padding: 20,
     maxHeight: '70%',
@@ -1239,7 +1239,7 @@ const styles = StyleSheet.create({
     padding: 8,
   },
   closeButtonText: {
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     fontSize: 24,
     fontWeight: 'bold',
   },
@@ -1259,13 +1259,13 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
   historyItemText: {
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     fontSize: 14,
     flex: 1,
     lineHeight: 20,
   },
   noHistoryText: {
-    color: '#C9F0D6',
+    color: '#B3B3B3',
     textAlign: 'center',
     fontSize: 14,
     marginVertical: 20,

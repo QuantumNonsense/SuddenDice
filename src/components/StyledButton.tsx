@@ -11,10 +11,10 @@ import {
 // Try to use your theme colors, but fall back if the file/path changes.
 let ThemeColors: any = {
   vegasRed: '#C21807',
-  vegasGreen: '#0FA958',
+  vegasGreen: '#000000',
   white: '#FFFFFF',
   black: '#000000',
-  feltDark: '#092E1E',
+  feltDark: '#000000',
   gray300: '#CCCCCC',
 };
 try {
@@ -88,7 +88,7 @@ function getVariant(variant: Variant) {
     case 'success':
       return {
         container: {
-          backgroundColor: ThemeColors.vegasGreen || '#0FA958',
+          backgroundColor: ThemeColors.vegasGreen || '#000000',
           borderColor: 'transparent',
         } as ViewStyle,
         label: { color: ThemeColors.white || '#fff' },

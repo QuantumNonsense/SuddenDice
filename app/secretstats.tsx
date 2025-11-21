@@ -341,7 +341,7 @@ export default function SecretStatsScreen() {
     return (
       <View style={styles.container}>
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#0FA958" />
+          <ActivityIndicator size="large" color="#000000" />
           <Text style={styles.loadingText}>Loading statistics...</Text>
         </View>
         <Pressable
@@ -676,7 +676,7 @@ export default function SecretStatsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0B3A26',
+    backgroundColor: '#000000',
     alignItems: 'center',
     justifyContent: 'flex-start',
     paddingTop: 40,
@@ -685,7 +685,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 28,
     fontWeight: '700',
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     marginBottom: 4,
     textAlign: 'center',
   },
@@ -704,7 +704,7 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   card: {
-    backgroundColor: '#115E38',
+    backgroundColor: '#000000',
     borderRadius: 12,
     padding: 20,
     marginBottom: 16,
@@ -720,7 +720,7 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontSize: 18,
     fontWeight: '700',
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     marginBottom: 12,
     textAlign: 'center',
   },
@@ -734,7 +734,7 @@ const styles = StyleSheet.create({
   bigNumber: {
     fontSize: 48,
     fontWeight: '700',
-    color: '#0FA958',
+    color: '#000000',
     textAlign: 'center',
   },
   statsTable: {
@@ -746,11 +746,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 8,
     borderBottomWidth: 1,
-    borderBottomColor: 'rgba(230, 255, 230, 0.1)',
+    borderBottomColor: 'rgba(179, 179, 179, 0.1)',
   },
   statLabel: {
     fontSize: 16,
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     fontWeight: '600',
     flex: 1,
   },
@@ -761,7 +761,7 @@ const styles = StyleSheet.create({
   },
   statCount: {
     fontSize: 16,
-    color: '#0FA958',
+    color: '#000000',
     fontWeight: '700',
     minWidth: 50,
     textAlign: 'right',
@@ -806,7 +806,7 @@ const styles = StyleSheet.create({
   },
   loadingText: {
     fontSize: 16,
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     marginTop: 16,
   },
   errorContainer: {
@@ -824,7 +824,7 @@ const styles = StyleSheet.create({
   },
   errorText: {
     fontSize: 16,
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     textAlign: 'center',
     marginBottom: 8,
   },
@@ -838,12 +838,12 @@ const styles = StyleSheet.create({
   },
   backButtonTopText: {
     fontSize: 16,
-    color: '#0FA958',
+    color: '#000000',
     fontWeight: '600',
   },
   statCountLarge: {
     fontSize: 24,
-    color: '#0FA958',
+    color: '#000000',
     fontWeight: '700',
   },
   statCountSmall: {
@@ -882,13 +882,13 @@ const styles = StyleSheet.create({
   },
   resetMessage: {
     fontSize: 14,
-    color: '#E6FFE6',
+    color: '#B3B3B3',
     textAlign: 'center',
     marginTop: 12,
     fontWeight: '600',
   },
   resetMessageSuccess: {
-    color: '#0FA958',
+    color: '#000000',
   },
   resetMessageError: {
     color: '#FF3B30',

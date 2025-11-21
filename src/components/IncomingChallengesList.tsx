@@ -289,7 +289,7 @@ export default function IncomingChallengesList({ myUserId, onJoinGame }: Incomin
       {challenges.map(challenge => (
         <TouchableOpacity
           key={challenge.id}
-          style={{ backgroundColor: '#115E38', borderRadius: 8, padding: 12, marginBottom: 10 }}
+          style={{ backgroundColor: '#000000', borderRadius: 8, padding: 12, marginBottom: 10 }}
           onPress={() => !challenge.game_id ? acceptChallenge(challenge) : onJoinGame(challenge.game_id!)}
         >
           <Text style={{ color: '#fff', fontSize: 15 }}>
