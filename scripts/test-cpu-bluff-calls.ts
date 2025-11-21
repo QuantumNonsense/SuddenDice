@@ -193,7 +193,7 @@ const runBluffCallTest = async () => {
     console.log('-'.repeat(80));
     
     items.forEach(stat => {
-      const rollLabel = stat.roll === '21' ? '21 (Mexican)' :
+      const rollLabel = stat.roll === '21' ? '21 (Sudden Strike)' :
                        stat.roll === '31' ? '31 (Reverse)' :
                        stat.roll === '41' ? '41 (Social)' : stat.roll;
       

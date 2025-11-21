@@ -168,7 +168,7 @@ describe('Comprehensive Gameplay Scenarios', () => {
     // Automatic 2-point penalty for not answering Mexican
     expect(state.playerScore).toBe(3);
     expect(state.cpuScore).toBe(5);
-    expect(state.message).toContain('Mexican');
+    expect(state.message).toContain('Sudden Strike');
   });
 
   test('Game ends when player hits 0 points', async () => {

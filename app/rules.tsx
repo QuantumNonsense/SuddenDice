@@ -30,7 +30,7 @@ export default function RulesScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Mexican Dice — Rules</Text>
+      <Text style={styles.title}>Sudden Strike Dice — Rules</Text>
 
       <View style={styles.musicSection}>
         <Text style={styles.statusLabel}>
@@ -99,14 +99,14 @@ export default function RulesScreen() {
         </Text>
 
         <Text style={styles.body}>
-          <Image source={require('../assets/images/mexican-dice-logo.png')} style={{ width: 18, height: 18, marginBottom: -2 }} /> 21 &ldquo;Mexican&rdquo;: Claiming a Mexican makes the round worth 2 points. The next player must either accept
+          <Image source={require('../assets/images/mexican-dice-logo.png')} style={{ width: 18, height: 18, marginBottom: -2 }} /> 21 &ldquo;Sudden Strike&rdquo;: Claiming a Sudden Strike makes the round worth 2 points. The next player must either accept
           the challenge and roll for a real 21, or Call Bluff. Whoever is wrong — caller or claimer — loses 2 points.
           Reverses do not reduce the penalty.
         </Text>
 
         <Text style={styles.body}>
           🔄 31 “Reverse”: Sends the challenge back so the previous player must now match or beat the reflected roll. Reverse can
-          always be claimed (truth or bluff). If a Mexican is reversed onto someone, the 2-point penalty still applies.
+          always be claimed (truth or bluff). If a Sudden Strike is reversed onto someone, the 2-point penalty still applies.
         </Text>
 
         <Text style={styles.body}>
@@ -119,7 +119,7 @@ export default function RulesScreen() {
         </Text>
         <Text style={styles.body}>
           If a bluff is suspected, the player can Call Bluff rather than accepting the roll. In normal rounds, if the claim was truthful, the caller loses 1 point;
-          if it was a bluff, the liar loses 1 point. In Mexican <Image source={require('../assets/images/mexican-dice-logo.png')} style={{ width: 18, height: 18, marginBottom: -2 }} /> rounds, the loser always loses 2 points. Everyone starts with 5 points; hit 0 and you&apos;re out.
+          if it was a bluff, the liar loses 1 point. In Sudden Strike <Image source={require('../assets/images/mexican-dice-logo.png')} style={{ width: 18, height: 18, marginBottom: -2 }} /> rounds, the loser always loses 2 points. Everyone starts with 5 points; hit 0 and you&apos;re out.
         </Text>
 
         </View>

@@ -14,7 +14,7 @@ type Props = {
 };
 
 const formatClaim = (value: number) => {
-  if (value === 21) return '21 (Mexican)';
+  if (value === 21) return '21 (Sudden Strike)';
   if (value === 31) return '31 (Reverse)';
   if (value === 41) return '41 (Social)';
   const hi = Math.floor(value / 10);
@@ -27,7 +27,7 @@ const renderClaim = (value: number) => {
   if (value === 21) {
     return (
       <>
-        21 (Mexican <Image source={mexicanLogo} style={{ width: 16, height: 16, marginBottom: -2 }} />)
+        21 (Sudden Strike <Image source={mexicanLogo} style={{ width: 16, height: 16, marginBottom: -2 }} />)
       </>
     );
   }

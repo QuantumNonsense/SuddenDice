@@ -29,7 +29,7 @@ import { useGameStore } from '../src/state/useGameStore';
 
 function formatClaim(value: number | null | undefined): string {
   if (typeof value !== 'number' || Number.isNaN(value)) return '—';
-  if (value === 21) return '21 (Mexican)';
+  if (value === 21) return '21 (Sudden Strike)';
   if (value === 31) return '31 (Reverse)';
   if (value === 41) return '41 (Social)';
   const hi = Math.floor(value / 10);
@@ -565,13 +565,13 @@ export default function Survival() {
   const narration = (buildBanner?.() || message || '').trim();
   const lastClaimValue = baselineClaim ?? lastClaim ?? null;
 
-  // Helper component to render claim with inline logo for Mexican
+  // Helper component to render claim with inline logo for Sudden Strike
   const renderClaim = (value: number | null | undefined) => {
     const text = formatClaim(value);
     if (value === 21) {
       return (
         <>
-          21 (Mexican <Image source={require('../assets/images/mexican-dice-logo.png')} style={{ width: 16, height: 16, marginBottom: -2 }} />)
+          21 (Sudden Strike <Image source={require('../assets/images/mexican-dice-logo.png')} style={{ width: 16, height: 16, marginBottom: -2 }} />)
         </>
       );
     }

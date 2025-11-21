@@ -55,7 +55,7 @@ describe('turn flow and scoring', () => {
       lastAction: 'reverseVsMexican',
       lastPlayerRoll: 31,
       lastCpuRoll: 21,
-      message: 'You claim 31 (Reverse) against Mexican 🌮.',
+      message: 'You claim 31 (Reverse) against Sudden Strike 🌮.',
     }));
 
     useGameStore.getState().callBluff();
@@ -76,7 +76,7 @@ describe('turn flow and scoring', () => {
       lastAction: 'reverseVsMexican',
       lastPlayerRoll: 52,
       lastCpuRoll: 21,
-      message: 'You claim 31 (Reverse) against Mexican 🌮.',
+      message: 'You claim 31 (Reverse) against Sudden Strike 🌮.',
     }));
 
     useGameStore.getState().callBluff();
@@ -96,7 +96,7 @@ describe('turn flow and scoring', () => {
       lastClaim: 21,
       lastAction: 'normal',
       lastCpuRoll: 21,
-      message: 'The Rival claims 21 (Mexican 🌮). You must roll a real 21, 31, or 41 or bluff 21/31 — otherwise call bluff.',
+      message: 'The Rival claims 21 (Sudden Strike 🌮). You must roll a real 21, 31, or 41 or bluff 21/31 — otherwise call bluff.',
     }));
 
     useGameStore.getState().playerClaim(65);
@@ -145,7 +145,7 @@ describe('turn flow and scoring', () => {
       const state = useGameStore.getState();
       
       // This triggers the automatic Mexican penalty
-      expect(state.message).toContain('You failed to answer Mexican');
+      expect(state.message).toContain('You failed to answer Sudden Strike');
       expect(state.playerScore).toBe(3); // Lost 2 points
       expect(state.cpuScore).toBe(5);
       expect(state.lastClaim).toBeNull();

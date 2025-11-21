@@ -136,7 +136,7 @@ export default function StatsScreen() {
   const getRollLabel = (roll: string): string => {
     switch (roll) {
       case '21':
-        return '21 (Mexican)';
+        return '21 (Sudden Strike)';
       case '31':
         return '31 (Reverse)';
       case '41':
