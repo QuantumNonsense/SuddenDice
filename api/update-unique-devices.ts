@@ -1,5 +1,5 @@
 // FILE: api/update-unique-devices.ts
-import { kv } from '@vercel/kv';
+import { kv } from './kv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 const UNIQUE_DEVICES_KEY = 'uniqueDevices:set';

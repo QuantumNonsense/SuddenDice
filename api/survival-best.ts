@@ -1,5 +1,5 @@
 // api/survival-best.ts
-import { kv } from '@vercel/kv';
+import { kv } from './kv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 const GLOBAL_KEY = 'survival:globalBest';

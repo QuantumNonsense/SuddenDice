@@ -1,4 +1,4 @@
-import { kv } from '@vercel/kv';
+import { kv } from './kv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 type RivalClaimEvent = {

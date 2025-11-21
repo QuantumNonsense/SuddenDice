@@ -1,5 +1,5 @@
 // api/roll-stats.ts
-import { kv } from '@vercel/kv';
+import { kv } from './kv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 // All valid normalized rolls: high die first

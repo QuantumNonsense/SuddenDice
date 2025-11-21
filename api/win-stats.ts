@@ -1,5 +1,5 @@
 // api/win-stats.ts
-import { kv } from '@vercel/kv';
+import { kv } from './kv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
 const PLAYER_WINS_KEY = 'winStats:playerWins';

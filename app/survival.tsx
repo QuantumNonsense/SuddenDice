@@ -1,6 +1,7 @@
+import { useFocusEffect } from '@react-navigation/native';
 import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
     Animated,
     Dimensions,
@@ -13,6 +14,7 @@ import {
     View,
 } from 'react-native';
 
+import AnimatedDiceReveal from '../src/components/AnimatedDiceReveal';
 import BluffModal from '../src/components/BluffModal';
 import Dice from '../src/components/Dice';
 import FeltBackground from '../src/components/FeltBackground';
@@ -21,7 +23,6 @@ import ParticleBurst from '../src/components/ParticleBurst';
 import StreakCelebrationOverlay from '../src/components/StreakCelebrationOverlay';
 import StreakEndPopup from '../src/components/StreakEndPopup';
 import StyledButton from '../src/components/StyledButton';
-import AnimatedDiceReveal from '../src/components/AnimatedDiceReveal';
 import { isAlwaysClaimable, meetsOrBeats, splitClaim } from '../src/engine/mexican';
 import { buildClaimOptions } from '../src/lib/claimOptions';
 import { useGameStore } from '../src/state/useGameStore';
@@ -238,13 +239,24 @@ export default function Survival() {
   }, [periodMs, currentStreak, isSurvivalOver]);
 
   useEffect(() => {
-    // start a run when this screen mounts
-    startSurvival();
+    // log mount/unmount for debugging
+    console.log('SURVIVAL: component mounted');
     return () => {
-      // ensure we leave survival mode when the screen unmounts
-      stopSurvival();
+      console.log('SURVIVAL: component unmounted');
     };
   }, [startSurvival, stopSurvival]);
+
+  // Ensure survival initialization runs when the screen is focused (first navigation)
+  useFocusEffect(
+    useCallback(() => {
+      console.log('SURVIVAL: screen focused - starting survival');
+      startSurvival();
+      return () => {
+        console.log('SURVIVAL: screen unfocused - stopping survival');
+        stopSurvival();
+      };
+    }, [startSurvival, stopSurvival])
+  );
 
   // Reset milestone flags when streak resets or survival restarts
   const prevStreakForReset = useRef(currentStreak);
@@ -638,7 +650,10 @@ export default function Survival() {
   }, [mexicanFlashNonce]);
 
   function handleRollOrClaim() {
-    if (controlsDisabled) return;
+    if (controlsDisabled) {
+      console.log('SURVIVAL: handleRollOrClaim blocked - controlsDisabled', { isGameOver, turn, isBusy, turnLock, isSurvivalOver });
+      return;
+    }
 
     if (hasRolled && !mustBluff && lastPlayerRoll != null) {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
@@ -651,6 +666,7 @@ export default function Survival() {
     setRollingAnim(true);
     Haptics.selectionAsync();
     playerRoll();
+    console.log('SURVIVAL: playerRoll invoked');
     setTimeout(() => setRollingAnim(false), 400);
   }
 
