@@ -1,6 +1,6 @@
 // api/survival-average.ts
-import { kv } from './kv';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { kv } from './kv';
 
 const TOTAL_STREAKS_KEY = 'survival:totalStreaks';
 const TOTAL_RUNS_KEY = 'survival:totalRuns';
